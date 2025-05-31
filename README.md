@@ -105,7 +105,7 @@ lbp_archive_tools <command> [arguments]
 Run `--help` for an overview:
 
 ```bash
-lbp_archive_tools --help
+archive_dl --help
 ```
 
 You’ll see:
@@ -133,7 +133,7 @@ COMMANDS:
 #### `bkp` (Backup a single level)
 
 ```bash
-lbp_archive_tools bkp <level_id> [--lbp3]
+archive_dl bkp <level_id> [--lbp3]
 ```
 
 - `<level_id>`: Numeric ID from your SQLite `slot` table.
@@ -143,10 +143,10 @@ Example:
 
 ```bash
 # Backup level ID 1234 in its native format:
-lbp_archive_tools bkp 1234
+archive_dl bkp 1234
 
 # Force LBP3 backup for level ID 1234:
-lbp_archive_tools bkp 1234 --lbp3
+archive_dl bkp 1234 --lbp3
 ```
 
 ---
@@ -154,7 +154,7 @@ lbp_archive_tools bkp 1234 --lbp3
 #### `planet` (Download a planet’s SLTb and all level blobs)
 
 ```bash
-lbp_archive_tools planet <planet_sha1>
+archive_dl planet <planet_sha1>
 ```
 
 - `<planet_sha1>`: A 40-hex SHA1 string (e.g. `3622E8A1234567890ABCDEF1234567890ABCDEF`) for the planet’s rootLevel.
@@ -162,7 +162,7 @@ lbp_archive_tools planet <planet_sha1>
 Example:
 
 ```bash
-lbp_archive_tools planet 3622E8A1234567890ABCDEF1234567890ABCDEF
+archive_dl planet 3622E8A1234567890ABCDEF1234567890ABCDEF
 ```
 
 ---
@@ -170,7 +170,7 @@ lbp_archive_tools planet 3622E8A1234567890ABCDEF1234567890ABCDEF
 #### `fetch-level` (Fetch & dump a single level by ID)
 
 ```bash
-lbp_archive_tools fetch-level <level_id>
+archive_dl fetch-level <level_id>
 ```
 
 - `<level_id>`: Numeric ID from the SQLite `slot` table.
@@ -178,7 +178,7 @@ lbp_archive_tools fetch-level <level_id>
 Example:
 
 ```bash
-lbp_archive_tools fetch-level 1234
+archive_dl fetch-level 1234
 ```
 
 ---
@@ -186,7 +186,7 @@ lbp_archive_tools fetch-level 1234
 #### `fetch-entire-planet` (Fetch all levels for a creator)
 
 ```bash
-lbp_archive_tools fetch-entire-planet <np_handle>
+archive_dl fetch-entire-planet <np_handle>
 ```
 
 - `<np_handle>`: The LBP creator’s PlayStation Network handle.
@@ -194,7 +194,7 @@ lbp_archive_tools fetch-entire-planet <np_handle>
 Example:
 
 ```bash
-lbp_archive_tools fetch-entire-planet CyriusTheVirus
+archive_dl fetch-entire-planet CyriusTheVirus
 ```
 
 ---
@@ -202,12 +202,12 @@ lbp_archive_tools fetch-entire-planet CyriusTheVirus
 #### `read-from-file` (Batch fetch from `creators.txt`)
 
 ```bash
-lbp_archive_tools read-from-file
+archive_dl read-from-file
 ```
 
 - No arguments.
-- Reads `creators.txt` (one NP handle per line, skip blank lines).
-- Creates `fileDump0/`, `fileDump1/`, etc., for each handle.
+- Reads `creators.txt` (one NP handle per line).
+- Creates `fileDump0/`, `fileDump1/`, etc., for each time you run it.
 
 Example:
 
@@ -216,5 +216,5 @@ Example:
 # CyriusTheVirus
 # another_user
 
-lbp_archive_tools read-from-file
+archive_dl read-from-file
 ```
