@@ -1,0 +1,32 @@
+# Database file path
+# Download from this link: https://archive.org/download/dry23db
+databasePath: "dry.db"
+
+# Directory where level backups are stored
+# For your convenience:
+# - If on RPCS3, set this to (RPCS3 directory)/dev_hdd0/home/00000001/savedata
+# - If on PS3, set this to PS3/SAVEDATA on your USB stick
+backupDirectory: "backups"
+
+# Server where level resources are downloaded from
+# Values are: "bonsai" | "refresh" | "archive"
+downloadServer: "refresh"
+
+# Maximum number of resources to be downloaded in parallel
+maxParallelDownloads: 10
+
+# Whether the backup version is determined based on the level format.
+# For example, LBP1/2 levels in LBP3 format will be written as LBP3 backups.
+# Set this to false only if you want to backport levels!
+fixBackupVersion: true
+
+# Whether to save all LBP1/LBP2 levels as LBP3 backups.
+# This is useful since LBP3 cannot read LBP1/LBP2 backups.
+# Overrides the previous fixBackupVersion setting.
+forceLbp3Backups: false
+
+# Path to your local ZIP archive root (used only if online == 0)
+archivePath: "D:\\LBP Archive"
+
+# 0 = local ZIP mode, 1 = HTTP (online) mode
+online: 0

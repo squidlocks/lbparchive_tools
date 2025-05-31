@@ -1,0 +1,3 @@
+C:\Users\Home\Desktop\lbp_archive_dl - Copy\RealmImporter\RealmImporter\bin\Release\net9.0\win-x64\publish\RealmImporter.pdb
+C:\Users\Home\Desktop\lbp_archive_dl - Copy\RealmImporter\RealmImporter\bin\Release\net9.0\win-x64\publish\realm-wrappers.dll
+C:\Users\Home\Desktop\lbp_archive_dl - Copy\RealmImporter\RealmImporter\bin\Release\net9.0\win-x64\publish\RealmImporter.exe
