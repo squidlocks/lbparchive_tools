@@ -219,4 +219,4 @@ Example:
 archive_dl read-from-file
 ```
 
-CREDITS TO uhwot  for allowing me to fork his code!
+CREDITS TO [lbp_archive_dl by uhwot](https://github.com/uhwot/lbp_archive_dl) for allowing me to fork his code!
