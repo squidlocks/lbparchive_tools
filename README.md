@@ -194,7 +194,7 @@ lbp_archive_tools fetch-entire-planet <np_handle>
 Example:
 
 ```bash
-lbp_archive_tools fetch-entire-planet squidlocks
+lbp_archive_tools fetch-entire-planet CyriusTheVirus
 ```
 
 ---
@@ -213,7 +213,7 @@ Example:
 
 ```bash
 # Given creators.txt contains:
-# squidlocks
+# CyriusTheVirus
 # another_user
 
 lbp_archive_tools read-from-file
