@@ -25,6 +25,8 @@ A command-line toolkit for downloading, processing, and backing up LittleBigPlan
 
 ## Prerequisites
 
+LittleBigRefresh server version (v2.18.0) is only supported at this time. 
+
 1. **Rust & Cargo**  
    - Install from [rustup.rs](https://rustup.rs/) or your OS package manager.  
    - Minimum Rust version: 1.60 (latest stable recommended).
@@ -48,8 +50,10 @@ A command-line toolkit for downloading, processing, and backing up LittleBigPlan
    - A directory containing LBP resource ZIPs or a remote server (e.g. archive.org). See [Configuration](#configuration) for details.
 
 5. **A Config File (`config.yml`)**  
-   - Describes database path, backup directory, download server or local archive path, and other settings.  
+   - Describes database path, backup directory, download server or local archive path, and other settings.
 
+6. **Realm File From Server** 
+   - copy and paste your .realm file into where the exe's are located from your LBP Server and rename it as template.realm
 ---
 
 ## Configuration
