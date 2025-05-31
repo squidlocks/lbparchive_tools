@@ -92,14 +92,14 @@ force_lbp3_backups: false
 Once you have built both the Rust CLI and `RealmImporter.exe`, examples below assume:
 
 - You’re in the root of the Rust project.
-- `lbp_archive_tools` (the Rust binary) and `RealmImporter.exe` are both in your `PATH` or in the current directory.
+- `archive_dl` (the Rust binary) and `RealmImporter.exe` are both in your `PATH` or in the current directory.
 
 ```bash
 # On Windows:
-lbp_archive_tools.exe <command> [arguments]
+archive_dl.exe <command> [arguments]
 
 # On Linux/macOS:
-lbp_archive_tools <command> [arguments]
+archive_dl <command> [arguments]
 ```
 
 Run `--help` for an overview:
@@ -111,11 +111,11 @@ archive_dl --help
 You’ll see:
 
 ```
-lbp_archive_tools 1.0
+archive_dl 1.0
 Command-line tools for LittleBigPlanet resource backup and retrieval
 
 USAGE:
-    lbp_archive_tools <COMMAND>
+    archive_dl <COMMAND>
 
 FLAGS:
     -h, --help       Prints help information
@@ -218,3 +218,5 @@ Example:
 
 archive_dl read-from-file
 ```
+
+CREDITS TO uhwot  for allowing me to fork his code!
